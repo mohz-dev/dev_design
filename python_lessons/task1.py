@@ -1,34 +1,3 @@
-'''
-Hello @everyone
-
-Here's your take-home exercise. Please attempt it.
-
-Student Grades Tracker
-Write a simple Python program that helps teachers track student grades and calculate averages.
-
-   
-Requirements:
-Accept multiple student names and grades
-Calculate average grade
-Determine pass/fail status
-Display summary report
-
-
-Ask the teacher how many students they want to enter grades for
-For each student:
-a. Ask for the student's name
-b. Ask for their test score
-
-Check if each score is valid (between 0 and 100)
-Calculate the average of all scores
-
-Tell the teacher:
-a. Who passed (score ≥ 60)
-b. Who failed (score < 60)
-c. The class average
-d. The highest and lowest scores
-
-'''
 # Pseudocode
 # input for number of student
 # for loop working with input
@@ -60,14 +29,15 @@ for student in range(no_of_students):
     student_score = int(input("Enter Student score: "))
     while student_score not in range(0, 101):
         student_score = int(input("Enter Student score: "))
-        # if student_score in range(0, 101):
-        # break
+
     scores.append(student_score)
     student_info = [student_name, student_score]
+
     if student_score < 60:
         failed_students.append(student_name)
     else:
         passed_students.append(student_name)
+
     students.append(student_info)
 
 
