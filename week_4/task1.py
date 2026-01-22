@@ -34,9 +34,9 @@ for student in range(no_of_students):
     student_info = [student_name, student_score]
 
     if student_score < 60:
-        failed_students.append(student_name)
+        failed_students.append(student_info)
     else:
-        passed_students.append(student_name)
+        passed_students.append(student_info)
 
     students.append(student_info)
 
