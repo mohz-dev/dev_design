@@ -31,7 +31,11 @@ for student in range(no_of_students):
         student_score = int(input("Enter Student score: "))
 
     scores.append(student_score)
-    student_info = [student_name, student_score]
+    # student_info = [student_name, student_score]
+    student_info = {
+        "name": student_name,
+        "score": student_score
+    }
 
     if student_score < 60:
         failed_students.append(student_info)
