@@ -14,15 +14,13 @@ from pprint import pprint
 
 
 # ask user for category
+# check if the category exists
 # ask user for specific item in category
+# check if item is in category
 # ask user for quantity of item
-# make a list from the supplies dictionary using
-# check if category is in the list
-# if category is in the list, confirm, else tell user category not found, print categories and ask user to pick
-# check if item is in the category
-# if item is in category confirm, else tell user item not found, print item and ask user to pick again
 # check if the quantity is available
-# if quantity is available proceed, else tell user quantity not enough
+# subtract what is sold from quantity available
+# print inventory showing what is available
 
 
 petShop = {
@@ -71,7 +69,7 @@ qty_requested = int(
     input(f"Enter the quantity, available quantity is '{quantity}': "))
 
 while qty_requested > quantity or qty_requested < 0:
-    print(f"Sorry we only have {quantity} in stock")
+    print(f"Sorry we only have '{quantity}' in stock")
     qty_requested = int(
         input(f"Enter the quantity, available quantity is '{quantity}': "))
 
